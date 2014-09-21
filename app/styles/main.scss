@@ -20,3 +20,39 @@
     width: 50px;
   }
 }
+
+/* MAIN STYLES */
+.main-left-side {
+  background: beige;
+  height: 100%;
+}
+.main-content-side {
+  background: black;
+  height: 100%;
+  .mail-preview {
+    background: white;
+    height: 100%;
+  }
+}
+
+/* MAIL PREVIEW STYLES */
+.mail-preview {
+
+}
+
+/* FOOTER STYLES */
+footer {
+  &.main-footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    a {
+      color: teal;
+      font-weight: bold;
+    }
+    .heart {
+      color: red;
+    }
+  }
+}
