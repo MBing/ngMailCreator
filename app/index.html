@@ -14,6 +14,7 @@
 
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+
     <!-- endbuild -->
 
     <!-- build:js scripts/modernizr.js -->
@@ -24,9 +25,13 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div ui-view="left-nav" class="large-3 left main-left-side"></div>
-    <div ui-view="content" class="large-9 right main-content-side"></div>
+<!--     <div class="off-canvas-wrap">
+      <a class="left-off-canvas-toggle" href="#"><i class="fa fa-cog"></i></a>
+      <div ui-view="content" class="inner-wrap"></div>
+      <aside ui-view="left-nav" class="left-off-canvas-menu"></aside>
+        
+    </div> -->
+    <div class="off-canvas-wrap" ui-view="main"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -50,6 +55,7 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-foundation/mm-foundation-tpls.js"></script>
     <!-- endbower -->
+    <script src="scripts/modules/ngDraggable.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->

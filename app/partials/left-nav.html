@@ -1,17 +1,16 @@
-<div>
-<nav class="top-bar row">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">MailCreator</a></h1>
-    </li>
-  </ul>
-
-  <section class="top-bar-section">
-    <ul class="left">
-      <li class="active"><a ng-href="#">Start Here</a></li>
-      <li><a ng-href="#">About</a></li>
-      <li><a ng-href="#">Contact</a></li>
-    </ul>
-  </section>
-</nav>
-</div>
+<accordion ng-init="open1 = true">
+    <accordion-group is-open="true">
+	    <accordion-heading>
+	            I can have markup, too! <i class="right" ng-class="{'fa fa-chevron-down': !open1, 'fa fa-chevron-right': open1}"></i>
+	    </accordion-heading>
+	      Drag and Drop the content field to a place on your mail preview.
+		<div id="file-text" class="button" draggable="true"><i class="fa fa-file-text-o fa-2x"></i></div>
+		<div id="file-image" class="button" draggable="true"><i class="fa fa-file-image-o fa-2x"></i></div>  
+    </accordion-group>
+    <accordion-group is-open="open1">
+        <accordion-heading>
+            I can have markup, too! <i class="right" ng-class="{'fa fa-chevron-down': open1, 'fa fa-chevron-right': !open1}"></i>
+        </accordion-heading>
+        This is just some content to illustrate fancy headings.
+    </accordion-group>
+ </accordion>

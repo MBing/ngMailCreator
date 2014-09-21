@@ -1,3 +1,5 @@
+@import "fonts";
+@import "font-awesome";
 @import "normalize";
 @import "foundation";
 
@@ -20,33 +22,53 @@
     width: 50px;
   }
 }
-
-/* MAIN STYLES */
-.main-left-side {
-  background: beige;
-  height: 100%;
-}
-.main-content-side {
-  background: black;
-  height: 100%;
-  .mail-preview {
-    background: white;
-    height: 100%;
+a {
+  color: teal;
+  &:hover {
+    color: teal;
+    opacity: 0.7;
   }
 }
+/* MAIN STYLES */
+.left-nav {
+  padding-left: 0;
+  accordion {
+    color: white;
+  }
+}
+body {
+  background: #222222;
+}
+// .main-left-side {
+//   background: beige;
+//   height: 100%;
+// }
+// .main-content-side {
+//   background: black;
+//   height: 100%;
+//   .mail-preview {
+//     background: white;
+//     height: 100%;
+//   }
+// }
 
 /* MAIL PREVIEW STYLES */
 .mail-preview {
-
+  background: white;
+  height: 500px;
+}
+.drop-div {
+  background: white;
+  height: 500px;
 }
 
 /* FOOTER STYLES */
 footer {
   &.main-footer {
-    color: white;
+    color: black;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 1%;
     a {
       color: teal;
       font-weight: bold;
