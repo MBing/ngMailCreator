@@ -1,0 +1,26 @@
+<div class="inner-wrap">
+    <nav class="tab-bar">
+        <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
+
+        <section class="middle tab-bar-section">
+            <h1 class="title">ngMailCreator by Martin Bing</h1>
+        </section>
+
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+            <li><label>MENU</label></li>
+            <li><a ui-sref="home">MailCreator</a></li>
+            <li><a ui-sref="about">About</a></li>
+            <li><a href="#">Share</a></li>
+            <li><a href="#">Save</a></li>
+        </ul>
+    </aside>
+
+    <section class="main-section large-12" ui-view="content"></section>
+
+    <a class="exit-off-canvas"></a>
+</div>
